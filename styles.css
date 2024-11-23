@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: #FFFFFF;
+    font-family: 'Cabinet Grotesk', 'Roboto', 'Fractul', sans-serif;
+    overflow-x: hidden;
+    }
+
+    .image-container {
+    position: absolute;
+    top: 108px; 
+    left: -100px;
+    width: 100%; 
+    height: auto;
+    z-index: -1; 
+    /* overflow: hidden; */
+    pointer-events: none;
+    }
+    
+    
+
+.circle-container{
+    position: absolute;
+    top: 20%;
+    left: -10%; 
+    transform: translateY(-50%); 
+    width: 300px; 
+    height: 300px;
+    background:  #4DF791;
+    border-radius: 50%; 
+    filter: blur(300px); 
+    /* z-index: -1; */
+    }
+    
+    /* Navbar */
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100vw;
+    padding: 20px;
+    max-width: 1156px; 
+    margin: 0 auto; 
+    /* background: #FFFFFF; */
+    height: 113px; 
+    z-index: 1;
+    }
+
+    .navbar-brand img {
+    width: 150px; 
+    max-height: 80px; 
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+    /* margin-left:px; */
+}
+
+
+    .navbar .btn12 {
+    background:#006633;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+    
+    /* Hero Section */
+
+    .hero-section { 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        margin-top: 40px;
+        padding: 4rem 2rem; 
+        z-index: 1;
+    }
+
+    .hero-section h1 {
+        font-family: Cabinet Grotesk;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-top: -100px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    .hero-section h1 span {
+        background-image: linear-gradient(87.11deg, #037A4E 15.89%, #4DF791 65.57%, #037A4E 105.67%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+        
+    .hero-section p {
+    font-size: 2.25rem;
+    color: #6c757d;
+    margin-bottom: 60px;
+    Name: M3/headline/medium;
+    font-family: var(--HeadlineMediumFont);
+    /* font-size: var(--HeadlineMediumSize); */
+    font-weight: 400;
+    line-height: var(--HeadlineMediumLineHeight);
+    letter-spacing: var(--HeadlineSmallTracking);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    }
+
+    .hero-section .cta-btn {
+    background: #006633;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 15px 80px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    z-index: 2;
+    }
+
+    .hero-section .cta-btn img {
+        margin-top: 0px;
+    }
+    
+    /* How It Works Section */
+    .how-it-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* This ensures that the header and content stack vertically */
+    text-align: center; /* Center-align text within the section */
+    padding: 2rem; /* Add padding for better spacing */
+    margin-bottom: 20px;
+    }
+    .how-it-works h2 {
+    font-family: Cabinet Grotesk;
+    font-family: Cabinet Grotesk;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: var(--DisplayLargeLineHeight);
+    letter-spacing: var(--DisplayLargeTracking);
+    color: #000;
+    margin-bottom: 50px;
+    }
+
+    .how-it-works h2 span{
+    background-image:linear-gradient(87.11deg, #037A4E 15.89%, #4DF791 65.57%, #037A4E 105.67%);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent;   
+    }
+
+    .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This keeps content spaced, and image aligned to the bottom */
+        }
+
+    .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important; 
+    }
+
+    .card-title {
+    font-family: Fractul;
+    font-size: var(--HeadlineLargeSize);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: var(--HeadlineLargeLineHeight);
+    letter-spacing: var(--HeadlineLargeTracking);
+    text-align: left;
+    }
+
+    .icon {
+    font-family: 'Fractul', sans-serif;
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 250px;
+    text-align: right;
+    border: none;
+    -webkit-text-stroke: 1px #4dce83; /* Stroke width and color */
+    color: transparent; /* Remove fill color */
+    margin-top: -40px;
+    border: 1px solid;
+    border-image-source: linear-gradient(163.48deg, #037A4E 9.41%, #4DF791 128.77%);
+
+
+    }
+
+    .card-img {
+    width: 100%;
+    height: 250px;
+    /* margin-top: auto; Ensure the image stays at the bottom */
+    }
+
+    /* Who Can Apply Section */
+    .who-can-apply{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -95px;
+    }
+
+    .blue-card {
+    width: 1000px;
+    background: linear-gradient(74.54deg, #037A4E 35.44%, #3BC995 173.64%);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    /* max-width: 1200px; */
+    /* margin-left: 15px; */
+    margin-bottom: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .apply {
+    display: inline-block;
+    }
+
+    .blue-card h2 {
+    font-family: Cabinet Grotesk;
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: var(--DisplayLargeLineHeight);
+    letter-spacing: var(--DisplayLargeTracking);
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    }
+
+    .apply .container-icon{
+    display: flex;
+    justify-content: left;
+    }
+
+        .container-icon img{
+        margin-top: 2px;
+        margin-left: 80px;
+        width: 28px;
+        Height: 28px;
+
+        }
+    
+        .blue-card p {
+        /* //styleName: M3/title/large; */
+        font-family: var(--TitleLargeFont);
+        font-size: var(--TitleLargeSize);
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: var(--TitleLargeTracking);
+        text-align: left;
+        margin-left: -60px
+
+        }
+    
+        .blue-card img {
+        max-width: 330px;
+        margin-top: 5px;
+        margin-right: 80px;
+        }
+    
+        /* Button styling */
+        .btn-custom {
+        /* display: flex;
+        justify-content: center; */
+        /* align-items: center; */
+        background-color: white;
+        /* width: 200px; */
+        color: #006633;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+        /* padding: 10px 40px; */
+        }
+
+        .btn-custom .shift{
+        margin-left: 65px;
+        }
+
+        .btn-custom .shift img {
+        margin-top: -1px;
+        }
+    
+        .btn-custom:hover {
+        background-color: #f1f1f1;
+        }
+    
+        /* Flexbox for the card layout */
+        .blue-card .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+        
+.footer .crate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max width */
+    padding: 0 20px; /* Add consistent inner spacing */
+    box-sizing: border-box;
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+.mt-3 {
+    color: #000;
+}
+
+footer .link {
+    margin-top: 5px;
+    color: black;
+}

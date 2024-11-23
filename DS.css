@@ -1,0 +1,833 @@
+
+body {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background: #FFFFFF;
+    font-family: 'Cabinet Grotesk','Roboto', 'Fractul' sans-serif, ;
+    padding: 20px;
+    gap: 0px;
+    opacity: 0px;
+    overflow-x: hidden;
+  }
+
+ /* Navbar Styles */
+ .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 20px 20px 10px;
+    max-width: 1156px;
+    margin: 0 auto;
+    /* background: #FFFFFF; */
+    height: 80px;
+}
+
+.logo {
+    width: 150px; 
+    max-height: 80px; 
+    height: auto; 
+    display: flex;
+    margin-left: 65px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-between; /* Ensures progress and device cards are side by side */
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0 20px; /* Add padding to prevent content touching screen edges */
+}
+
+/* Progress Steps Container */
+
+/* Progress Container */
+.progress-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 60px;
+}
+
+/* Progress Card */
+.progress-card {
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.hold {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+/* Step Links */
+.step-links {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+/* Individual Step Item */
+.step-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    z-index: 2;
+}
+
+/* Vertical Line Between Steps */
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background-color: #b4b4b4;
+    top: 30px;
+    z-index: 1;
+}
+
+/* Completed Step */
+.step-links li.completed .icon {
+    border: 3px solid green;
+    background-color: #d4f8d4; 
+}
+
+/* Vertical line for completed step: Green */
+.step-links li.completed .icon {
+    border: 3px solid green !important; /* Force the green border for completed steps */
+    background-color: #d4f8d4 !important; /* Light green background */
+}
+
+/* Vertical line for completed step: Green */
+.step-links li.completed .vertical-line {
+    background-color: green !important; /* Ensure the line is green */
+}
+
+/* In Progress Step: Blue border */
+.step-links li.in-progress .icon {
+    /* border:  !important; 
+    background-color: #e0f0ff !important; */
+}
+
+/* Vertical line for in-progress step: Blue */
+.step-links li.in-progress .vertical-line {
+    /* background-color: */
+}
+
+
+/* Wrap Text */
+.wrap {
+    margin-left: 15px;
+}
+
+.wrap .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wrap a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #252121;
+}
+
+.wrap p {
+    font-size: 14px;
+    color: blue;
+}
+
+
+  /* Cards Styles */
+  .cards-container {
+    padding: 20px; /* Add padding to the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Ensure cards are evenly spaced */
+}
+
+.device-card {
+    width: 100%; /* Let Bootstrap grid handle width */
+    max-width: 350px; /* Set a maximum width for the cards */
+    margin: 0 0  30px; /* Center cards horizontally in their column */
+    height: auto; /* Adjust height dynamically */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.device-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 120px;
+}
+
+.device-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.device-details h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.device-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* DeviceSpecs Styles */
+
+#selected-phone {
+    padding: 20px; /* Add padding to the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.device-card1 {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack button and image vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    max-width: 200px;
+    margin: 0 0 30px;
+    height: auto;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.device-card1 button {
+    margin-top: 30px;
+    margin-bottom: 10px; /* Add spacing between button and image */
+    background-color: #E8FDF5;
+    ; /* Button styling */
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #37BB8A;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Cabinet Grotesk;
+    font-size: var(--TitleMediumSize);
+    font-weight: 500;
+    line-height: var(--TitleMediumLineHeight);
+    letter-spacing: var(--TitleMediumTracking);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.device-card1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 120px;
+    margin-bottom: 20px;
+}
+
+.spec-card {
+    width: 100%; /* Let Bootstrap grid handle width */
+    max-width: 350px;
+    margin-left: -200px; 
+    height: auto; 
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.spec-card:hover {
+    transform: translateY(-10px);
+}
+
+.spec-card h2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: Cabinet Grotesk;
+    font-size: 1.5rem
+    font-weight: 700;
+    line-height: var(--HeadlineMediumLineHeight);
+    letter-spacing: var(--HeadlineSmallTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #037A4E;
+}
+
+.spec-card ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.spec-card ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Style for the price button */
+.price-button {
+    display: flex;
+    align-items: center;
+    background-color: #E8FDF5;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: 1px solid #37BB8A;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.price-button:hover {
+    background-color: #68f5bf;
+}
+
+.price-button .spec-title {
+    color: #037A4E;
+    font-family: Cabinet Grotesk;
+    font-size: var(--TitleMediumSize);
+    font-weight: 500;
+    line-height: var(--TitleMediumLineHeight);
+    letter-spacing: var(--TitleMediumTracking);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price-button .spec-detail {
+    color: black;
+    font-family: Cabinet Grotesk;
+    font-size: var(--TitleMediumSize);
+    font-weight: 500;
+    line-height: var(--TitleMediumLineHeight);
+    letter-spacing: var(--TitleMediumTracking);
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    font-weight: bold;
+}
+
+/* Style for the specification titles */
+.spec-title {
+    color: #000000;
+    font-family: Cabinet Grotesk;
+    font-size: var(--TitleLargeSize);
+    font-weight: 500;
+    line-height: var(--TitleLargeLineHeight);
+    letter-spacing: var(--HeadlineSmallTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Style for the specification details */
+.spec-detail {
+    color: #AEAEAE;
+    font-family: Cabinet Grotesk;
+    font-size: var(--TitleLargeSize);
+    font-weight: 500;
+    line-height: var(--TitleLargeLineHeight);
+    letter-spacing: var(--HeadlineSmallTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+/* Proceed Button */
+.proceed-button-container {
+   
+    margin-top: -150px;
+    margin-left:480px;
+    display: flex;
+    justify-content: start;
+}
+
+.proceed-button {
+
+    width: 610px;
+    background: #037A4E;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.proceed-button:hover {
+    background-color: #45A049;
+}
+
+/* Verification Page */
+
+/* Form Section */
+.form-container {
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    font-family: Cabinet Grotesk;
+    font-weight: 500;
+    line-height: var(--DisplayMediumLineHeight);
+    letter-spacing: var(--DisplayMediumTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn22 {
+    width: 452px;
+    background-color: #037A4E;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn22:hover {
+    background-color: #4CAF50;
+}
+
+/* UserDetails Page */
+
+/* Form Styling */
+.form-card {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-card h2 {
+    font-family: Cabinet Grotesk;
+    font-weight: 500;
+    line-height: var(--DisplayMediumLineHeight);
+    letter-spacing: var(--DisplayMediumTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.form-card p {
+    font-family: Cabinet Grotesk;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--HeadlineSmallLineHeight);
+    letter-spacing: var(--HeadlineSmallTracking);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.user-details-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-family: Cabinet Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-weight: normal;
+}
+
+.form-group input,
+.form-group select {
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #037A4E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #4CAF50;
+}
+
+.form-card small img {
+    height: 25px;
+    margin-top: -6px;
+}
+
+/* LoanSummary Page */
+
+.loan-card {
+    flex: 2;  /* Allow this to take up more space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/* Card Title and Text */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Loan Details Section */
+.p-3 {
+    padding: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+/* Card Body Styling */
+.card-body {
+    font-size: 14px;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-warning {
+    color: #ffc107;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.smaller-text {
+    font-size: 12px;
+}
+
+/* Buttons Section */
+.btn-outline-secondary {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 48%;
+    cursor: pointer;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn14 {
+    background-color: #037A4E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 48%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn14:hover {
+    background-color: #00b327;
+}
+
+
+/* Loan Duration Dropdown Styling */
+.loan-duration-select {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.loan-duration-select label {
+    font-weight: bold;
+    display: block;  /* Ensure label is on top */
+    margin-bottom: 8px;  /* Space between label and dropdown */
+}
+
+.loan-duration-select select {
+    width: 100%;
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    /* background-image: url("images/arrow-down.svg"); */
+    background-position: right 15px center;  
+    background-repeat: no-repeat;
+}
+
+.loan-duration-select select:focus {
+    border-color: #007bff;  /* Change border color on focus */
+    outline: none;
+}
+
+/* Placeholder text style */
+.loan-duration-select select option[disabled] {
+    color: #aaa;
+}
+
+.loan-card small img {
+    height: 25px;
+    margin-top: -6px;
+}
+
+/* Pickup Option Page */
+
+/* Form Card Styling */
+.card.custom-shadow {
+    flex: 2;  /* Allow this to take up more space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+/* Card Title and Text */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+/* Radio Button Styling */
+.custom-radio-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #05703e;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.custom-radio-card:hover {
+  border-color: #055c2c;
+  box-shadow: 0 0 4px rgba(9, 182, 66, 0.5);
+}
+
+.form-check-input {
+  margin-right: 10px;
+  /* Ensures radio button stays inside the box and is aligned correctly */
+  position: relative;
+  top: 1px; /* Slight adjustment to make it align nicely */
+}
+
+/* Dropdown and Input Styling */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+}
+
+.form-control:focus {
+  border-color: #037A4E;
+  outline: none;
+}
+
+/* Submit Button Styling */
+.btn-primary {
+    background-color: #037A4E;
+    ;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #00b33c;
+}
+
+/* Dimmed Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* This creates the dimmed background */
+    z-index: 1000;
+}
+
+/* Popup Card Styling */
+.otp-verification-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure the modal is on top of the dimmed background */
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.otp-verification-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.otp-verification-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.otp-verification-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.otp-verification-card button {
+    background-color: #037A4E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.otp-verification-card button:hover {
+    background-color: #08c46c;
+}
+
+
+

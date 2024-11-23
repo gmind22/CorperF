@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserDetails</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="DS.css">
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fractul/stylesheet.css">
+</head>
+<body>
+    <nav className="navbar">
+        <a href="index.html"> 
+            <img src="images/Corperflex-Log.svg" alt="Logo" class="logo" />
+        </a>
+    </nav>
+    <div class="content">
+      <div class="row">
+        <!-- Sidebar with steps -->
+        <div class="progress-container">
+          <div class="progress-card">
+            <div class="hold">
+              <ul class="step-links">
+                <li class="in-progress">
+                  <div class="icon-wrapper">
+                    <img src="images/Component 9 (6).svg" alt="Step 1 Icon" class="icon">
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="title">Step 1</div>
+                    <a href="DeviceSelection.html">Select device</a>
+                    
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="images/Component 9 (5).svg" alt="Step 2 Icon" class="icon">
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="title">Step 2</div>
+                    <a href="Verification.html">Verification</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="images/Component 9 (4).svg" alt="Step 3 Icon" class="icon">
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="title">Step 3</div>
+                    <a href="UserDetails.html">Tell us about yourself</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="images/Component 9 (3).svg" alt="Step 4 Icon" class="icon">
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="title">Step 4</div>
+                    <a href="LoanSummary.html">Loan Summary</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-wrapper">
+                    <img src="images/Component 9 (1).svg" alt="Step 5 Icon" class="icon">
+                  </div>
+                  <div class="wrap">
+                    <div class="title">Step 5</div>
+                    <a href="PickupOption.html">Select Pickup Option</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+          <!-- Form Section -->
+          <div class="col-md-8">
+            <div class="form-card">
+                <h2 class="card-title text-left">Tell us about yourself</h2>
+                <p class="text-left">
+                    We need to validate your information. For that, we require some personal data.
+                </p>
+                <form 
+                    class="user-details-form" id="UD-form">
+                    <div class="form-group">
+                        <label for="bvn">Bank Verification Number (BVN)</label>
+                        <input
+                            type="text"
+                            id="bvn"
+                            class="form-control"
+                            placeholder="1234567890123"
+                            required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input
+                            type="text"
+                            id="firstname"
+                            class="form-control"
+                            placeholder="John"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input
+                            type="text"
+                            id="lastname"
+                            class="form-control"
+                            placeholder="Doe"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" class="form-control" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="text"
+                            id="phone"
+                            class="form-control"
+                            placeholder="+234 7031 879 3456"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="account">Account Number</label>
+                        <input
+                            type="text"
+                            id="account"
+                            class="form-control"
+                            placeholder="2345678901"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="bankname">Bank Name</label>
+                        <select id="bankname" class="form-control" required>
+                            <option value="">Choose...</option>
+                            <option>Access Bank</option>
+                            <option>GTB</option>
+                            <option>UBA</option>
+                            <option>Sterling Bank</option>
+                            <option>EcoBank</option>
+                            <option>Zenith Bank</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State of Deployment</label>
+                        <select id="state" class="form-control" required>
+                            <option value="">Choose...</option>
+                            <option>Abia</option>
+                            <option>Adamawa</option>
+                            <option>Akwa Ibom</option>
+                            <option>Anambra</option>
+                            <option>Bauchi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="completionDate">NYSC Completion Date</label>
+                        <input
+                            type="date"
+                            id="completionDate"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitForm2AndNavigate()">
+                        Submit
+                    </button>
+                </form>
+                <div class="text-center mt-3">
+                    <small>Verified by <img src="images/remita.png" alt="remita-icon"></small>
+                </div>
+            </div>
+            </div>
+    </div>
+
+          
+
+      
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
