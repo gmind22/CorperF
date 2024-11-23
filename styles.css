@@ -356,3 +356,395 @@ footer .link {
     margin-top: 5px;
     color: black;
 }
+
+@media (max-width: 768px) {
+    /* General Styles */
+    body {
+      padding: 0 10px; /* Add some padding for smaller screens */
+    }
+  
+    /* Navbar adjustments for smaller screens */
+    .navbar {
+      flex-direction: column; /* Stack navbar items vertically */
+      padding: 10px;
+      height: auto;
+    }
+  
+    .navbar-brand img {
+      margin-bottom: 10px; /* Add spacing below the logo */
+    }
+  
+    .navbar .btn12 {
+      padding: 10px 20px; /* Adjust button size */
+      font-size: 14px;
+    }
+  
+    /* Hero Section */
+    .hero-section {
+      flex-direction: column; /* Stack content vertically */
+      padding: 2rem 1rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 2rem; /* Reduce font size */
+      margin-top: 0; /* Adjust spacing */
+    }
+  
+    .hero-section p {
+      font-size: 1.2rem; /* Reduce paragraph size */
+      margin-bottom: 20px; /* Adjust spacing */
+    }
+  
+    .hero-section .cta-btn {
+      width: 100%; /* Make button full-width */
+      padding: 12px 0; /* Adjust padding */
+      font-size: 1rem;
+    }
+  
+    /* How It Works Section */
+    .how-it-works h2 {
+      font-size: 2rem; /* Reduce font size */
+    }
+  
+    .card {
+      flex-direction: column; /* Stack card content vertically */
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+  
+    .card-img {
+      height: 200px; /* Adjust image height */
+    }
+  
+    /* Who Can Apply Section */
+    .who-can-apply {
+      flex-direction: column; /* Stack content vertically */
+      margin-top: 0; /* Adjust margin */
+    }
+  
+    .blue-card {
+      width: 100%; /* Full width on smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      padding: 20px;
+      text-align: center; /* Center-align content */
+    }
+  
+    .blue-card h2 {
+      margin: 0 auto 20px auto; /* Center title with spacing below */
+      font-size: 2rem; /* Adjust font size */
+    }
+  
+    .blue-card p {
+      margin: 20px 0; /* Add spacing between text and other elements */
+      font-size: 1rem; /* Adjust font size */
+      line-height: 1.5; /* Improve readability */
+    }
+  
+    .apply {
+      margin: 20px 0; /* Add spacing between apply section and other content */
+    }
+  
+    .apply .container-icon img {
+      margin-left: 0; /* Align icons naturally */
+    }
+  
+    .blue-card img {
+      width: 100%; /* Make the image responsive */
+      max-width: 300px; /* Limit max size */
+      margin: 20px auto 0 auto; /* Center the image and add spacing */
+    }
+  
+    .btn-custom {
+      width: 100%; /* Make button full-width */
+      padding: 12px 0; /* Adjust padding */
+      font-size: 1rem; /* Adjust font size */
+      margin: 20px auto; /* Center the button */
+    }
+  
+    /* Footer Adjustments */
+    footer {
+      flex-direction: column; /* Stack footer content vertically */
+      padding: 10px;
+    }
+  
+    .footer .crate {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 0;
+    }
+  
+    .logo-footer {
+      margin-bottom: 10px; /* Add spacing below the logo */
+    }
+  
+    .mt-3 {
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  
+    footer .link {
+      font-size: 0.9rem; /* Adjust link size */
+      margin-top: 5px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    /* Body */
+    body {
+      font-size: 14px; /* Adjust overall font size */
+      padding: 0 8px; /* Add some padding for smaller screens */
+    }
+  
+    /* Navbar */
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px;
+      height: auto;
+    }
+  
+    .navbar-brand img {
+      width: 120px; /* Reduce logo size */
+      margin-bottom: 10px;
+    }
+  
+    .navbar .btn12 {
+      padding: 8px 16px; /* Adjust button size */
+      font-size: 12px; /* Reduce font size */
+    }
+  
+    /* Hero Section */
+    .hero-section {
+      padding: 2rem 1rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.8rem; /* Reduce font size */
+      margin-top: 0;
+      line-height: 1.2;
+    }
+  
+    .hero-section p {
+      font-size: 1rem; /* Adjust paragraph font size */
+      margin-bottom: 20px;
+    }
+  
+    .hero-section .cta-btn {
+      width: 100%; /* Make button full-width */
+      padding: 12px 0; /* Adjust padding */
+      font-size: 0.9rem; /* Reduce button font size */
+    }
+  
+    /* How It Works Section */
+    .how-it-works h2 {
+      font-size: 1.8rem; /* Adjust font size */
+      margin-bottom: 30px;
+    }
+  
+    .card {
+      flex-direction: column; /* Stack content vertically */
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .card-img {
+      height: 180px; /* Adjust image height */
+    }
+  
+    .card-title {
+      font-size: 1.2rem; /* Adjust title font size */
+    }
+  
+    /* Who Can Apply Section */
+    .who-can-apply {
+      flex-direction: column;
+      margin-top: 0; /* Adjust margin */
+    }
+  
+    .blue-card {
+      width: 100%; /* Ensure full width */
+      padding: 15px;
+      text-align: center;
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .blue-card h2 {
+      font-size: 1.5rem; /* Adjust title size */
+      margin-bottom: 15px;
+    }
+  
+    .blue-card p {
+      font-size: 0.9rem; /* Adjust text size */
+      line-height: 1.4; /* Improve readability */
+      margin: 15px 0;
+    }
+  
+    .apply {
+      margin: 15px 0;
+    }
+  
+    .blue-card img {
+      max-width: 250px; /* Reduce image size */
+      margin: 15px auto 0; /* Center and add spacing */
+    }
+  
+    .btn-custom {
+      width: 100%; /* Full width */
+      padding: 10px 0;
+      font-size: 0.9rem;
+      margin: 15px auto; /* Center button */
+    }
+  
+    /* Footer */
+    footer {
+      padding: 10px;
+    }
+  
+    .footer .crate {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .logo-footer {
+      width: 80px; /* Adjust logo size */
+      margin-bottom: 10px;
+    }
+  
+    .mt-3 {
+      font-size: 0.8rem; /* Adjust footer text size */
+    }
+  
+    footer .link {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    /* Body */
+    body {
+      font-size: 14px; /* Adjust overall font size */
+      padding: 0 8px; /* Add some padding for smaller screens */
+    }
+  
+    /* Navbar */
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px;
+      height: auto;
+    }
+  
+    .navbar-brand img {
+      width: 120px; /* Reduce logo size */
+      margin-bottom: 10px;
+    }
+  
+    .navbar .btn12 {
+      padding: 8px 16px; /* Adjust button size */
+      font-size: 12px; /* Reduce font size */
+    }
+  
+    /* Hero Section */
+    .hero-section {
+      padding: 2rem 1rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.8rem; /* Reduce font size */
+      margin-top: 0;
+      line-height: 1.2;
+    }
+  
+    .hero-section p {
+      font-size: 1rem; /* Adjust paragraph font size */
+      margin-bottom: 20px;
+    }
+  
+    .hero-section .cta-btn {
+      width: 100%; /* Make button full-width */
+      padding: 12px 0; /* Adjust padding */
+      font-size: 0.9rem; /* Reduce button font size */
+    }
+  
+    /* How It Works Section */
+    .how-it-works h2 {
+      font-size: 1.8rem; /* Adjust font size */
+      margin-bottom: 30px;
+    }
+  
+    .card {
+      flex-direction: column; /* Stack content vertically */
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .card-img {
+      height: 180px; /* Adjust image height */
+    }
+  
+    .card-title {
+      font-size: 1.2rem; /* Adjust title font size */
+    }
+  
+    /* Who Can Apply Section */
+    .who-can-apply {
+      flex-direction: column;
+      margin-top: 0; /* Adjust margin */
+    }
+  
+    .blue-card {
+      width: 100%; /* Ensure full width */
+      padding: 15px;
+      text-align: center;
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .blue-card h2 {
+      font-size: 1.5rem; /* Adjust title size */
+      margin-bottom: 15px;
+    }
+  
+    .blue-card p {
+      font-size: 0.9rem; /* Adjust text size */
+      line-height: 1.4; /* Improve readability */
+      margin: 15px 0;
+    }
+  
+    .apply {
+      margin: 15px 0;
+    }
+  
+    .blue-card img {
+      max-width: 250px; /* Reduce image size */
+      margin: 15px auto 0; /* Center and add spacing */
+    }
+  
+    .btn-custom {
+      width: 100%; /* Full width */
+      padding: 10px 0;
+      font-size: 0.9rem;
+      margin: 15px auto; /* Center button */
+    }
+  
+    /* Footer */
+    footer {
+      padding: 10px;
+    }
+  
+    .footer .crate {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .logo-footer {
+      width: 80px; /* Adjust logo size */
+      margin-bottom: 10px;
+    }
+  
+    .mt-3 {
+      font-size: 0.8rem; /* Adjust footer text size */
+    }
+  
+    footer .link {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+  }
+  

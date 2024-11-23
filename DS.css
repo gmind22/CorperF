@@ -830,4 +830,397 @@ body {
 }
 
 
+@media (max-width: 430px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-left: 10px;
+      width: 120px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    /* Hide progress container and its contents */
+    .progress-container,
+    .progress-card {
+      display: none;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .device-card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .proceed-button-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .proceed-button {
+      width: 100%;
+    }
+  
+    .form-container,
+    .form-card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .loan-card {
+      max-width: 100%;
+      margin: 20px auto;
+    }
+  
+    #selected-phone {
+      padding: 10px;
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .device-card1,
+    .spec-card {
+      width: 95%; /* Use most of the screen width */
+      max-width: 300px; /* Slightly reduce max width */
+      margin: 10px auto; /* Center the cards */
+      padding: 8px; /* Add compact padding */
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color: white;
+    }
+  
+    .device-card1 button {
+      margin: 15px 0 8px;
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    .device-card1 img {
+      max-width: 75%; /* Scale the image */
+      max-height: 90px;
+      margin-bottom: 10px;
+    }
+  
+    .spec-card h2 {
+      margin: 8px 0;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .spec-card ul {
+      padding: 0;
+      list-style-type: none;
+    }
+  
+    .spec-card ul li {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  
+    .price-button {
+      width: 100%;
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .proceed-button-container {
+      margin-top: 10px;
+      margin-left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Center the button */
+    }
+  
+    .proceed-button {
+      width: 300px;
+      padding: 10px 15px;
+      font-size: 12px;
+      border-radius: 8px;
+    }
+  
+    .btn22 {
+      width: 296px;
+    }
+  }
+  
 
+/* Extra Small Devices (Phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-left: 10px;
+      width: 120px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    /* Hide progress container and all its contents */
+    .progress-container {
+      display: none;
+    }
+  
+    .progress-card {
+      display: none;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .device-card {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .proceed-button-container {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .proceed-button {
+      width: 100%;
+    }
+  
+    .form-container,
+    .form-card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .loan-card {
+      max-width: 100%;
+      margin: 20px auto;
+    }
+
+    #selected-phone {
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .device-card1,
+    .spec-card {
+        width: 95%; /* Use most of the screen width */
+        max-width: 300px; /* Slightly reduce max width */
+        margin: 10px auto; /* Center the cards with auto margin */
+        padding: 8px; /* Add less padding for compact design */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: white;
+    }
+    
+    /* Adjust button inside .device-card1 */
+    .device-card1 button {
+        margin: 15px 0 8px; /* Reduce spacing further */
+        padding: 8px 12px; /* Smaller buttons */
+        font-size: 12px; /* Scale down the font */
+    }
+    
+    /* Image adjustments inside .device-card1 */
+    .device-card1 img {
+        max-width: 75%; /* Scale the image for even smaller devices */
+        max-height: 90px; /* Further limit the image height */
+        margin-bottom: 10px;
+    }
+    
+    /* Adjust .spec-card h2 */
+    .spec-card h2 {
+        margin: 8px 0;
+        font-size: 1rem; /* Further reduce heading font size */
+        text-align: center; /* Keep centered for phones */
+    }
+    
+    /* List inside .spec-card */
+    .spec-card ul {
+        padding: 0; /* Remove unnecessary padding */
+        list-style-type: none; /* Keep clean styling */
+    }
+    
+    .spec-card ul li {
+        font-size: 12px; /* Scale down the text size */
+        margin-bottom: 5px;
+    }
+    
+    /* Adjust price-button for phones */
+    .price-button {
+        width: 100%; /* Take full width of the card */
+        font-size: 12px; /* Reduce font size */
+        padding: 8px 10px; /* Adjust padding */
+    }
+    
+    /* Center the proceed button and adjust its size */
+    .proceed-button-container {
+        margin-top: 10px; /* Add minimal spacing from content above */
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the button */
+      }
+    
+      .proceed-button {
+        width: 300px; /* Match the width of the cards */
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Scale font size further */
+        border-radius: 8px; /* Match the border-radius of the cards */
+      }
+
+      .btn22 {
+        width: 296px;
+      }
+    }
+      
+  
+  /* Small Devices (Tablets, 576px - 768px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      margin-left: 20px;
+      width: 130px;
+    }
+  
+    .content {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .progress-container {
+      margin-left: 20px;
+    }
+  
+    .progress-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .cards-container {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .device-card {
+      max-width: 45%;
+      margin: 10px auto;
+    }
+  
+    .proceed-button-container {
+      margin-left: 0;
+      justify-content: center;
+    }
+  
+    .proceed-button {
+      width: 90%;
+    }
+  
+    .loan-card {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    #selected-phone {
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .device-card1,
+    .spec-card {
+        width: 90%; /* Set consistent width for both cards */
+        max-width: 350px; /* Limit the maximum width */
+        margin: 15px auto; /* Center the cards with auto margin */
+        padding: 10px; /* Add padding for better spacing */
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    /* Adjust button inside .device-card1 */
+    .device-card1 button {
+        margin: 20px 0 10px; /* Reduce spacing for smaller screens */
+        padding: 10px 15px; /* Adjust button size */
+        font-size: 14px; /* Scale down the font */
+    }
+    
+    /* Image adjustments inside .device-card1 */
+    .device-card1 img {
+        max-width: 80%; /* Scale the image for smaller devices */
+        max-height: 100px; /* Limit the image height */
+        margin-bottom: 15px;
+    }
+    
+    /* Adjust .spec-card h2 */
+    .spec-card h2 {
+        margin: 10px 0;
+        font-size: 1.2rem; /* Reduce heading font size */
+        text-align: center; /* Center the title */
+    }
+    
+    /* List inside .spec-card */
+    .spec-card ul {
+        padding: 0; /* Remove unnecessary padding */
+        list-style-type: none; /* Keep clean styling */
+    }
+    
+    .spec-card ul li {
+        font-size: 14px; /* Scale down the text size */
+        margin-bottom: 5px;
+    }
+      
+    /* Adjust price-button for smaller screens */
+    .price-button {
+        width: 100%; /* Take full width of the card */
+        font-size: 14px; /* Reduce font size */
+        padding: 8px 12px; /* Adjust padding */
+    }
+    
+    /* Center the proceed button and adjust its size */
+    .proceed-button-container {
+        margin-top: 20px; /* Add spacing from content above */
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the button */
+    }
+    
+    .proceed-button {
+        width: 90%; /* Make the button responsive */
+        max-width: 350px; /* Limit its width */
+        padding: 12px 20px; /* Adjust padding */
+        font-size: 14px; /* Scale font size */
+    }
+      
+  }
+  
